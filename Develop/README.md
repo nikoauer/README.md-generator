@@ -1,13 +1,13 @@
-# <asdasf>
+# <sdfds>
 
   ## Description
   
-  sdfg
+  
   
   ## Table of Contents
   
-  - [Installation](#installation)
-  - [Usage](#usage)
+  - [Installation](#intro)
+  - [Usage]
   - [Credits](#credits)
   - [License](#license)
   - [Contributions](#contributions)
@@ -15,38 +15,35 @@
   - [Github](#github)
   - [Email](#email)
   
+
   ## Installation
   
-  fdsgsdfg
+  
   
   ## Usage
   
-  sddg
+  
 
   ## Credits
 
-  sdgsdg
   
-  ## License
+  
+  ## License/Badge
 
    
-
-  ## Badges
-
-  
   
   ## How to Contribute
 
-  sdgdsg
+  
   
   ## Tests
 
-  sdgdsg
+  
 
   ## Github
 
-  sdg
+  
     
   ## Email
 
-  sdg
+  

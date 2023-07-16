@@ -1,9 +1,9 @@
-
-function Licences (licenceBadge, licenceLink) {
+//this function takes the data from the CLI response for the licences and badges
+function Licences (data) {
   const lincenceInput = data.licence[0];
   let licenceBadge = " ";
   let licenceLink = " ";
-
+//it checks if the chosen licence was selected and then returns the variables above to store the link and badge for each licence
   if (lincenceInput === 'MIT') {
     licenceBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
     licenceLink = 'https://opensource.org/licenses/MIT'
@@ -31,7 +31,9 @@ function Licences (licenceBadge, licenceLink) {
   return licenceBadge, licenceLink;
 }
 
+//this function writes the response data from CLI to this template readme.md file structure so it can be displayed once written in the index.html
 function generateMarkdown(data) {
+  Licences(data)
   return `# <${data.title}>
 
   ## Description
@@ -40,8 +42,8 @@ function generateMarkdown(data) {
   
   ## Table of Contents
   
-  - [Installation](#installation)
-  - [Usage](#usage)
+  - [Installation](#intro)
+  - [Usage]
   - [Credits](#credits)
   - [License](#license)
   - [Contributions](#contributions)
@@ -49,6 +51,7 @@ function generateMarkdown(data) {
   - [Github](#github)
   - [Email](#email)
   
+
   ## Installation
   
   ${data.installation}

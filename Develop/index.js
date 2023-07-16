@@ -1,3 +1,4 @@
+// this initializes the program once the CLI is called with node index.js
 function init() {
 
     const path = require('path');
@@ -5,6 +6,7 @@ function init() {
     const fs = require('fs');
     const generateMarkdown = require('./utils/generateMarkdown');
 
+    //variable stores the questions and inputs given through the CLI
 const questions = [
     {
        type: 'input',
@@ -58,6 +60,8 @@ const questions = [
         name: 'email'
      }]
 
+    //  This joins the current directory (process.cwd) with the readme.md file through the path.join
+    // It then takes the response variable and inputs that into the generate Markdown function and then writes the results to the new readme.md file
      inquirer.prompt(questions)
      .then((response) => {
         return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response));
