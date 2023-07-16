@@ -1,4 +1,4 @@
-# <sdfds>
+# <>
 
   ## Description
   
@@ -6,8 +6,8 @@
   
   ## Table of Contents
   
-  - [Installation](#intro)
-  - [Usage]
+  - [Installation](#installation)
+  - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
   - [Contributions](#contributions)
@@ -15,7 +15,6 @@
   - [Github](#github)
   - [Email](#email)
   
-
   ## Installation
   
   
@@ -30,7 +29,7 @@
   
   ## License/Badge
 
-   
+  https://opensource.org/licenses/MIT
   
   ## How to Contribute
 

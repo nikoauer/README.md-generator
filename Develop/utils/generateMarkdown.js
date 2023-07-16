@@ -1,6 +1,6 @@
 //this function takes the data from the CLI response for the licences and badges
 function Licences (data) {
-  const lincenceInput = data.licence[0];
+  const lincenceInput = data.licence;
   let licenceBadge = " ";
   let licenceLink = " ";
 //it checks if the chosen licence was selected and then returns the variables above to store the link and badge for each licence
@@ -41,7 +41,7 @@ function generateMarkdown(data) {
   ${data.description}
   
   ## Table of Contents
-  `
+  
   - [Installation](#installation)
   - [Usage](#usage)
   - [Credits](#credits)
@@ -51,7 +51,6 @@ function generateMarkdown(data) {
   - [Github](#github)
   - [Email](#email)
   
-`
   ## Installation
   
   ${data.installation}
