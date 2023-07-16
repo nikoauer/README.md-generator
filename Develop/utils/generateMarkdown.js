@@ -50,7 +50,6 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
-  - [Badge](#badge)
   - [Contributions](#contributions)
   - [Tests](#tests)
   - [Github](#github)
@@ -65,16 +64,16 @@ function generateMarkdown(data) {
   ## Credits
   ${data.credit}
   
-  ## Licence link
+  ## Licence
   ${link}
 
-  ## How to Contribute
+  ## Contributions
   ${data.contributions}
   
   ## Tests
   ${data.tests}
 
-  ## Github Profile
+  ## Github
   https://github.com/${data.github}
     
   ## Email

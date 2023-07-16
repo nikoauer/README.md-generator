@@ -1,10 +1,10 @@
-# <test>
+# <Readme-generator>
 
   ## Badge licence
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
-  test
+  This readme generator will allow the user to create a readme file through the Command Line Interface by simply typing what they wish to appear in each respective area as they are questioned.
   
   ## Table of Contents
   
@@ -19,25 +19,31 @@
   - [Email](#email)
   
   ## Installation
-  test
+  The user will require access to an IDE such as VS Code (with integrated terminal) and Inquirer npm must be installed. 
   
   ## Usage
-  test
+  To install this application, clone this repository and then open it in Visual Studio Code.
+  Then right click the develop folder and open intergrated terminal.
+  To start the program then type in the CLI, node index.js.
+  This will then prompt the user with questions and then they will answer with the information they want in their respective parts of the readme. 
+  Once all the questions are answered it will create a readme.md file located in the develop folder.
+
+  Here is a link to a video show casing the steps of how this works: https://youtu.be/4vjc3b-yrrY
 
   ## Credits
-  test
   
-  ## Licence link
+  
+  ## Licence
   https://opensource.org/licenses/MIT
 
-  ## How to Contribute
-  test
+  ## Contributions
+  To add changes to code please create an issues note prior to changing code
   
   ## Tests
-  test
+  
 
   ## Github Profile
-  https://github.com/test
+  https://github.com/nikoauer
     
   ## Email
-  Contact me through this email:test
+  Contact me through this email: journalistnikoauer@gmail.com
