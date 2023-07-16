@@ -38,7 +38,7 @@ const questions = [
      {
         type: 'list',
         message: 'What licence are you using for your repository?',
-        choices: ["MIT", "GNU General Public License 2.0", "Apache License 2.0", "GNU General Public License 3.0"],
+        choices: ['MIT', 'GNU General Public License 2.0', 'Apache License 2.0', 'GNU General Public License 3.0', 'Mozilla Public Licence 2.0', 'Unlicense'],
         name: 'licence'
      },
      {
@@ -59,9 +59,7 @@ const questions = [
 
      inquirer.prompt(questions)
      .then((response) => {
-        fs.writeFile('log.txt', (err) =>
-        err ? console.error(err) : console.log('Success!')
-      )
+        fs.writeFile('readme.md', generateMarkdown)
      });
 
 };
