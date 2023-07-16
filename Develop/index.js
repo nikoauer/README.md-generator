@@ -1,8 +1,9 @@
 function init() {
 
+    const path = require('path');
     const inquirer = require('inquirer');
     const fs = require('fs');
-    const generateMarkdown = require('./utils/generateMarkdown')
+    const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [
     {
@@ -59,7 +60,7 @@ const questions = [
 
      inquirer.prompt(questions)
      .then((response) => {
-        fs.writeFile('readme.md', generateMarkdown)
+        return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response));
      });
 
 };
