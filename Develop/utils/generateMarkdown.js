@@ -41,9 +41,9 @@ function generateMarkdown(data) {
   ${data.description}
   
   ## Table of Contents
-  
-  - [Installation](#intro)
-  - [Usage]
+  `
+  - [Installation](#installation)
+  - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
   - [Contributions](#contributions)
@@ -51,7 +51,7 @@ function generateMarkdown(data) {
   - [Github](#github)
   - [Email](#email)
   
-
+`
   ## Installation
   
   ${data.installation}
