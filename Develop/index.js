@@ -2,6 +2,7 @@ function init() {
 
     const inquirer = require('inquirer');
     const fs = require('fs');
+    const generateMarkdown = require('./utils/generateMarkdown')
 
 const questions = [
     {
@@ -30,7 +31,7 @@ const questions = [
         name: 'contributions'
      },
      {
-        type: 'input',
+        type: 'list',
         message: 'What licence are you using for your repository?',
         choices: ["MIT", "GNU General Public License 2.0", "Apache License 2.0", "GNU General Public License 3.0"],
         name: 'licence'
@@ -49,12 +50,14 @@ const questions = [
         type: 'input',
         message: 'What is your email address?',
         name: 'email'
-     }
-]
+     }]
+
+     inquirer.prompt(questions)
+     .then((response) => {
+        console.log(response)
+
+     });
+
 };
 
-// TODO: Create a function to initialize app
-
-
-// Function call to initialize app
 init();
