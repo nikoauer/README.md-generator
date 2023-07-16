@@ -27,6 +27,11 @@ const questions = [
      },
      {
         type: 'input',
+        message: 'Who is accredited with building this project?',
+        name: 'credit'
+     },
+     {
+        type: 'input',
         message: 'How do I/others contribute to this application?',
         name: 'contributions'
      },
@@ -54,8 +59,9 @@ const questions = [
 
      inquirer.prompt(questions)
      .then((response) => {
-        console.log(response)
-
+        fs.writeFile('log.txt', (err) =>
+        err ? console.error(err) : console.log('Success!')
+      )
      });
 
 };
