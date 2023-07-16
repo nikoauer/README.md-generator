@@ -1,8 +1,8 @@
 //this function takes the data from the CLI response for the licences and badges
 function Licences (data) {
   const lincenceInput = data.licence;
-  let licenceBadge = " ";
-  let licenceLink = " ";
+  let licenceBadge = ' ';
+  let licenceLink = ' ';
 //it checks if the chosen licence was selected and then returns the variables above to store the link and badge for each licence
   if (lincenceInput === 'MIT') {
     licenceBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
@@ -28,12 +28,13 @@ function Licences (data) {
     licenceBadge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]'
     licenceLink = 'http://unlicense.org/'
   }
-  return licenceBadge, licenceLink;
+  return {badge: licenceBadge, link : licenceLink};
 }
 
 //this function writes the response data from CLI to this template readme.md file structure so it can be displayed once written in the index.html
 function generateMarkdown(data) {
-  Licences(data)
+
+    const { badge, link } = Licences(data); // Extract the badge and link from the returned object
   return `# <${data.title}>
 
   ## Description
@@ -46,6 +47,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
+  - [Badge](#badge)
   - [Contributions](#contributions)
   - [Tests](#tests)
   - [Github](#github)
@@ -63,10 +65,14 @@ function generateMarkdown(data) {
 
   ${data.credit}
   
-  ## License/Badge
+  ## Licence
 
-  ${Licences(data)}
-  
+  ${link}
+
+  ## Badge
+
+  ${badge}
+
   ## How to Contribute
 
   ${data.contributions}
