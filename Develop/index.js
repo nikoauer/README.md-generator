@@ -1,4 +1,5 @@
 // this initializes the program once the CLI is called with node index.js
+// imports necessary files
 function init() {
 
     const path = require('path');

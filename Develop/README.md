@@ -1,8 +1,10 @@
-# <aasdasd>
+# <>
+
+  ## Badge licence
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
   
-  sadsad
   
   ## Table of Contents
   
@@ -18,36 +20,24 @@
   
   ## Installation
   
-  sadasd
   
   ## Usage
   
-  asdasd
 
   ## Credits
-
-  asdasd
   
-  ## Licence
-
-  https://www.gnu.org/licenses/gpl-3.0
-
-  ## Badge
-
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
+  
+  ## Licence link
+  https://opensource.org/licenses/MIT
 
   ## How to Contribute
-
-  asdasdas
+  
   
   ## Tests
-
-  asdasd
+  
 
   ## Github
-
-  asdsad
+  https://github.com/nikoauer
     
   ## Email
-
-  sadasd
+  Contact me through this email:
