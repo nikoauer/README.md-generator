@@ -64,10 +64,7 @@ const questions = [
     //  This joins the current directory (process.cwd) with the readme.md file through the path.join
     // It then takes the response variable and inputs that into the generate Markdown function and then writes the results to the new readme.md file
      inquirer.prompt(questions)
-     .then((response) => {
-        return fs.writeFileSync(path.join (process.cwd(), "README.md"), generateMarkdown(response));
-     });
-
+     .then(response => fs.writeFileSync(path.join(process.cwd(), "README.md"), generateMarkdown(response)));
 };
 
 init();
