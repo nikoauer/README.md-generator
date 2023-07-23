@@ -4,7 +4,7 @@
 
 This application allows the user to generate a readme.md file with all the necessary information inputed into the document using only the CLI. This project reminded me greatly of my previous experience working with C as it is dependant on using the CLI. It was an interesting opportunity to start delving into developing a responsive interaction through the CLI rather than with the traditional front end of a website. It allowed me to better understand tools like inquirer, the user input and storage of the input through the CLI, transporting the information between multiple files and then using that to display in a readme.md file. Check the readme in the Develop folder to see how the program works with a detailed Readme.
 
-Link to video showcasing the program: https://youtu.be/4vjc3b-yrrY
+Link to video showcasing the program: https://youtu.be/KIvQc2N9ZTQ
   
 ## Installation
 The user will require access to an IDE such as VS Code (with integrated terminal) and Inquirer npm must be installed. 

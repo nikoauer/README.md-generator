@@ -28,7 +28,7 @@
   This will then prompt the user with questions and then they will answer with the information they want in their respective parts of the readme. 
   Once all the questions are answered it will create a readme.md file located in the develop folder.
 
-  Here is a link to a video show casing the steps of how this works: https://youtu.be/4vjc3b-yrrY
+  Here is a link to a video show casing the steps of how this works: https://youtu.be/KIvQc2N9ZTQ
 
   ## Credits
   
